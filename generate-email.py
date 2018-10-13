@@ -11,7 +11,7 @@ loc_str += '2 - B520-1122\n3 - South Atrium\n4 - B16 B001E\n'
 loc_str += 'Choose from 1, 2, 3, 4 [1]: '
 location = input(loc_str)
 location = {'1': 'the Research Auditorium', '2': 'B520-1122',
-        '3': 'the South Atrium', '4': 'B16-B001E'}.get(location, 'B520-1122')
+        '3': 'the South Atrium', '4': 'B16-B001E'}.get(location, location)
 presenter = input('Who is presenting?\nEnter presenter: ')
 title = input('Enter the title of the paper: ')
 link = input('Enter the url to the paper: ')
